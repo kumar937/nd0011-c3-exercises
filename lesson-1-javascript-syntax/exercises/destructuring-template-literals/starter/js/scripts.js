@@ -11,8 +11,9 @@ const destructureExercise = async() => {
     // This is where your destructuring should take place. destructure the user object provided and then use template literals to create the name and bio. If you destructure the user object completely you won't need to worry about the profilePic but it will show up on the page.
 
     // use template literals here with your destructured object
-    const name = 'EDIT THIS'
-    const bio  = 'EDIT THIS'
+    const {firstName,lname:lastName,city,state,favorites,profilePic} = user
+    const [fav1,fav2]=favorites
+    const bio  = `hi! My name is ${firstname  lname} and I 'm from ${city, state} some of my favorite things are ${fav1+" and "+fav2} `
 
     // DO NOT EDIT BELOW THIS LINE!
 
